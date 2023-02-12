@@ -1,7 +1,8 @@
 # Movies_App
 An app that displays posters of movies at home screen and you can sort them according to Popular or Top-rated. you can navigate to movie-details screen by clicking on the movie poster to see more details about it like release-date, rating, title and plot synopsis. this app is fully built with Jetpack compose. <br>
 
-<a href="https://drive.google.com/file/d/1SxlKZEPz6rv7WNFQLbm6_Gqi_MXbbDWV/view?usp=sharing">Movies-app download</a>
+<b>You can download the app from here</b>
+<a href="https://drive.google.com/file/d/1SxlKZEPz6rv7WNFQLbm6_Gqi_MXbbDWV/view?usp=sharing">Movies-app download</a><br>
 <b>Technologies used</b>
 - Jetpack compose
 - Navigation with compose
