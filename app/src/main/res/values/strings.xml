@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MoviesComposeApp</string>
+    <string name="back_button">Back</string>
+    <string name="movies_app">Movies App</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="loading">movies are loading</string>
+    <string name="failed_to_load">Failed to load!</string>
+    <string name="menu_description">change movies category</string>
+    <string name="popular_movies">Popular</string>
+    <string name="top_rated_movies">Top-rated</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="launching_description">Launching App</string>
+</resources>
