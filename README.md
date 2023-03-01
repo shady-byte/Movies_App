@@ -12,6 +12,7 @@ An app that displays posters of movies at home screen and you can sort them acco
 - Retrofit
 - MVVM
 - Clean architecture
+- 
 
 <b>Screenshots from the application</b>
 
