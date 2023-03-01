@@ -32,13 +32,6 @@ fun MoviesApp(navController: NavHostController = rememberNavController()) {
 fun MoviesTopAppBar(title: String, canNavigateUp: Boolean, navigateUp:() -> Unit = {},
     modifier: Modifier = Modifier
 ) {
-    var showMenu by rememberSaveable {
-        mutableStateOf(false)
-    }
-    var categorySelected by rememberSaveable {
-        mutableStateOf(MoviesMenu.PopularMoviesItem)
-    }
-
     if(canNavigateUp) {
         TopAppBar(
             modifier = modifier,

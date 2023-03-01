@@ -113,6 +113,7 @@ fun FailureScreen(modifier: Modifier = Modifier) {
 }
 
 @Composable
+//List<Movie>
 fun SuccessScreen(movies: List<Movie>, onMovieClicked: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {

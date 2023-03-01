@@ -1,8 +1,16 @@
 package com.fintold.moviescomposeapp.models
 
+import androidx.compose.foundation.lazy.grid.GridItemSpan
+import androidx.compose.foundation.lazy.grid.LazyGridItemScope
+import androidx.compose.foundation.lazy.grid.LazyGridScope
+import androidx.compose.runtime.Composable
 import androidx.paging.compose.LazyPagingItems
+import com.fintold.moviescomposeapp.data.MoviesListPager
 import com.google.gson.Gson
 import com.squareup.moshi.Json
+import java.net.URLEncoder
+import java.nio.charset.StandardCharsets
+import java.util.*
 
 data class Movie(
     val id: Int = 0,
@@ -14,14 +22,16 @@ data class Movie(
 )
 
 fun Movie.toJson(): String {
-    return Gson().toJson(this).replace("/","$$")
-        .replace("?","*")
+    val url = URLEncoder.encode(posterPath,StandardCharsets.UTF_8.toString())
+    val synopsis = URLEncoder.encode(plotSynopsis, StandardCharsets.UTF_8.toString())
+    val movie = copy(posterPath = url, plotSynopsis = synopsis)
+
+    return Gson().toJson(movie)
+
 }
 
 fun String.fromJson(): Movie {
-    return Gson().fromJson(this.replace("$$","/")
-        .replace("*","?"),
-        Movie::class.java)
+    return Gson().fromJson(this.replace("+"," "), Movie::class.java)
 }
 
 fun String.toImageUrlWithLowRes(): String {
@@ -49,4 +59,3 @@ fun LazyPagingItems<Movie>.toMoviesList(): List<Movie> {
     }
     return movies
 }
-
