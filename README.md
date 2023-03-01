@@ -11,7 +11,7 @@ An app that displays posters of movies at home screen and you can sort them acco
 - Flows
 - Retrofit
 - MVVM
-- Clean architectutr
+- Clean architecture
 
 <b>You can download the app apk from here</b>
 <a href="url">Movies-app Download</a>
